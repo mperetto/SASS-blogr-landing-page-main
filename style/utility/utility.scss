@@ -3,8 +3,8 @@ a {
     color: inherit;
 }
 
-.p-1 {
-    padding: 1rem;
+.p-2 {
+    padding: 2rem;
 }
 
 .d-flex {
@@ -16,11 +16,12 @@ a {
 }
 
 .btn {
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 50px;
+    font-weight: 500;
 }
 
-.btn--filled {
+.btn-filled {
     background: var(--white);
     color: var(--light-red);
 }
