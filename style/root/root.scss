@@ -1,0 +1,45 @@
+//  Primary Colors
+
+$light-red: hsl(356, 100%, 66%); // (CTA text)
+$very-light-red: hsl(355, 100%, 74%); // (CTA hover background)
+$very-dark-blue: hsl(208, 49%, 24%); // (headings)
+
+//  Neutral Colors
+
+$white: hsl(0, 0%, 100%); // (text)
+$grayish-blue: hsl(240, 2%, 79%); // (footer text)
+$very-dark-grayis-blue: hsl(207, 13%, 34%); // (body copy)
+$very-dark-black-blue: hsl(240, 10%, 16%); // (footer background)
+
+//  Gradient
+
+//  Background gradient - Intro/CTA mobile nav:
+$bgg-very-light-red: hsl(13, 100%, 72%);
+$bgg-light-red: hsl(353, 100%, 62%);
+
+//  Background gradient - body:
+$bgg-very-dark-gray-blue: hsl(237, 17%, 21%);
+$bgg-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+:root {
+    /*  Primary Colors  */
+    --light-red: #{$light-red};
+    --very-light-red: #{$very-light-red};
+    --very-dark-blue: #{$very-dark-blue};
+
+    /*  Neutral Colors  */
+    --white: #{$white};
+    --grayish-blue: #{$grayish-blue};
+    --very-dark-grayis-blue: #{$very-dark-grayis-blue};
+    --very-dark-black-blue: #{$very-dark-black-blue};
+
+    /*  Gradient    */
+
+    /*  Background gradient - Intro/CTA mobile nav: */
+    --bgg-very-light-red: #{$bgg-very-light-red};
+    --bgg-light-red: #{$bgg-light-red};
+
+    /*  Background gradient - body: */
+    --bgg-very-dark-gray-blue: #{$bgg-very-dark-gray-blue};
+    --bgg-very-dark-desaturated-blue: #{$bgg-very-dark-desaturated-blue};
+}
