@@ -395,27 +395,6 @@ a {
   border: 1px solid var(--white);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-  /*
-        font-family: 'Overpass', sans-serif;
-
-        font-family: 'Ubuntu', sans-serif;
-    */
-}
-
-ul {
-  list-style: none;
-}
-
 .header {
   min-height: 100vh;
   border-radius: 0 0 0 50px;
@@ -573,6 +552,27 @@ ul {
 .dropdown-menu {
   overflow: hidden;
   border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  /*
+        font-family: 'Overpass', sans-serif;
+
+        font-family: 'Ubuntu', sans-serif;
+    */
+}
+
+ul {
+  list-style: none;
 }
 
 @media screen and (min-width: 701px) {
