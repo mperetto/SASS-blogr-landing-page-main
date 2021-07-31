@@ -3,6 +3,10 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
 .p-2 {
     padding: 2rem;
 }
@@ -29,4 +33,9 @@ a {
 .btn-outlined {
     background: transparent;
     border: 1px solid var(--white);
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
 }
