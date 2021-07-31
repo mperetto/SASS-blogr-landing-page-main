@@ -19,30 +19,13 @@ body {
     */
 }
 
-.features {
-    padding: 100px 30px;
-    overflow-x: hidden;
+.features__title {
+    text-align: center;
+    color: var(--very-dark-blue);
+}
 
-    .features__grid-container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        padding: 0 30px;
-    }
-
-    .features__title {
-        text-align: center;
-        color: var(--very-dark-blue);
-    }
-
-    .features__image-container {
-        max-height: 800px;
-    }
-
-    .features__image {
-        margin-top: -100px;
-    }
+.functions {
+    margin-top: 100px;
 }
 
 .cards__container {
@@ -69,7 +52,7 @@ body {
     background: var(--very-dark-blue);
     background-image: url('../images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    background-position: bottom 20% left -85%;
+    background-position: bottom 20% left -250px;
     color: var(--white);
     border-radius: 0 50px;
     padding: 0 50px;
@@ -102,20 +85,30 @@ body {
     }
 }
 
-.functions {
+.media-and-text {
     padding: 100px 30px;
-    .functions__grid-container {
+    overflow-x: hidden;
+    &__grid-container {
         display: grid;
         grid-template: auto / 50% 50%;
         align-items: center;
     }
-    .functions__image-container {
-        margin-left: -40%;
 
-        .functions__image {
-            max-height: 700px;
+    &__image-container {
+        max-height: 800px;
+    }
+
+    &__image-container--reverse {
+        margin-left: -45%;
+
+        .media-and-text__image {
+            max-height: 800px;
             max-width: 100%;
         }
+    }
+
+    &__image {
+        margin-top: -100px;
     }
 }
 
@@ -240,23 +233,26 @@ body {
         text-align: center;
     }
 
-    .features .features__grid-container {
-        grid-template-rows: auto auto;
-        grid-template-columns: 100%;
-        padding: 0;
+    .media-and-text {
+        &__grid-container {
+            grid-template-rows: auto auto;
+            grid-template-columns: 100%;
+            padding: 0;
+        }
 
         .cards__container {
             grid-row: 2;
         }
-        .features__image-container {
+
+        &__image-container {
             grid-row: 1;
             margin: 30px 0;
+        }
 
-            .features__image {
-                display: block;
-                margin: auto;
-                max-width: 100%;
-            }
+        &__image {
+            display: block;
+            margin: auto;
+            max-width: 100%;
         }
     }
 
@@ -264,6 +260,9 @@ body {
         text-align: center;
         padding: 0 20px 30px 0;
         margin-top: 150px;
+        background-position: top -200px center;
+        background-size: 150%;
+
         .infrastructure__grid-container {
             grid-template: auto auto / 100%;
         }
@@ -271,22 +270,6 @@ body {
         .infrastructure__image {
             margin: -150px auto 30px auto;
             display: block;
-        }
-    }
-
-    .functions {
-        .functions__grid-container {
-            grid-template: auto auto / 100%;
-        }
-
-        .functions__image-container {
-            margin: auto;
-            display: block;
-    
-            .functions__image {
-                max-height: 700px;
-                max-width: 100%;
-            }
         }
     }
 }
