@@ -1,7 +1,8 @@
 @import 'root/root.scss', 
         'normalize/normalize.scss', 
         'utility/utility.scss',
-        'header/header.scss';
+        'header/header.scss',
+        'footer/footer.scss';
 
 * {
     margin: 0;
@@ -12,12 +13,10 @@
 body {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
-    /*
-        font-family: 'Overpass', sans-serif;
-
-        font-family: 'Ubuntu', sans-serif;
-    */
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 .features__title {
     text-align: center;
@@ -26,26 +25,6 @@ body {
 
 .functions {
     margin-top: 100px;
-}
-
-.cards__container {
-    .card__title {
-        line-height: 1.5rem;
-        font-family: 'Overpass', sans-serif;
-        font-size: 2rem;
-        margin: 30px 0;
-        color: var(--very-dark-blue);
-    }
-
-    .card:nth-child(2) {
-        margin-top: 100px;
-    }
-
-    .card__content {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        color: var(--very-dark-grayish-blue);
-    }
 }
 
 .infrastructure {
@@ -82,33 +61,6 @@ body {
 
     .infrastructure__copy-content {
         padding: 0 30px;
-    }
-}
-
-.media-and-text {
-    padding: 100px 30px;
-    overflow-x: hidden;
-    &__grid-container {
-        display: grid;
-        grid-template: auto / 50% 50%;
-        align-items: center;
-    }
-
-    &__image-container {
-        max-height: 800px;
-    }
-
-    &__image-container--reverse {
-        margin-left: -45%;
-
-        .media-and-text__image {
-            max-height: 800px;
-            max-width: 100%;
-        }
-    }
-
-    &__image {
-        margin-top: -100px;
     }
 }
 
@@ -234,6 +186,7 @@ body {
     }
 
     .media-and-text {
+        margin: 0 30px 100px 30px;
         &__grid-container {
             grid-template-rows: auto auto;
             grid-template-columns: 100%;
@@ -271,5 +224,18 @@ body {
             margin: -150px auto 30px auto;
             display: block;
         }
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .row {
+        display: grid;
+        grid-template: repeat(4, auto) / 100%;
+    }
+
+    .col {
+        padding: 30px 0;
     }
 }
