@@ -802,6 +802,9 @@ body {
   .navbar-nav__cta .nav-item {
     margin: 10px 0;
   }
+  .header__subtitle {
+    margin: 0 20px;
+  }
   .nav-item__hr {
     display: block;
   }
@@ -826,8 +829,12 @@ body {
   .hamburger-menu {
     display: block;
   }
-  .card__title, .card__content {
+  .cards__container .card__title, .cards__container .card__content {
     text-align: center;
+    line-height: 2rem;
+  }
+  .cards__container .card__content {
+    font-size: 1rem;
   }
   .media-and-text {
     margin: 0 30px 100px 30px;
@@ -872,7 +879,7 @@ body {
   .footer {
     text-align: center;
   }
-  .row {
+  .footer .row {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (auto)[4];

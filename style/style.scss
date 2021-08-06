@@ -150,6 +150,10 @@ body {
         }
     }
 
+    .header__subtitle {
+        margin: 0 20px;
+    }
+
     .nav-item__hr {
         display: block;
     }
@@ -181,8 +185,15 @@ body {
         display: block;
     }
 
-    .card__title, .card__content {
-        text-align: center;
+    .cards__container {
+        .card__title, .card__content {
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        .card__content {
+            font-size: 1rem;
+        }
     }
 
     .media-and-text {
@@ -228,11 +239,10 @@ body {
 
     .footer {
         text-align: center;
-    }
-
-    .row {
-        display: grid;
-        grid-template: repeat(4, auto) / 100%;
+        .row {
+            display: grid;
+            grid-template: repeat(4, auto) / 100%;
+        }
     }
 
     .col {
