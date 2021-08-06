@@ -41,4 +41,55 @@ h3 {
   font-size: 2rem;
   font-family: 'Overpass', sans-serif;
 }
+
+.cards__container .card__title {
+  line-height: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
+  margin: 30px 0;
+  color: var(--very-dark-blue);
+}
+
+.cards__container .card:nth-child(2) {
+  margin-top: 100px;
+}
+
+.cards__container .card__content {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.media-and-text {
+  padding: 100px 30px;
+  overflow-x: hidden;
+}
+
+.media-and-text__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 50% 50%;
+      grid-template: auto / 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-and-text__image-container {
+  max-height: 800px;
+}
+
+.media-and-text__image-container--reverse {
+  margin-left: -45%;
+}
+
+.media-and-text__image-container--reverse .media-and-text__image {
+  max-height: 800px;
+  max-width: 100%;
+}
+
+.media-and-text__image {
+  margin-top: -100px;
+}
 /*# sourceMappingURL=utility.css.map */
