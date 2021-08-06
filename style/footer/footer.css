@@ -1,0 +1,31 @@
+.footer {
+  color: var(--white);
+  background: var(--very-dark-black-blue);
+  padding: 50px 30px;
+  border-radius: 0 50px 0 0;
+}
+
+.footer h4 {
+  margin-bottom: 30px;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer li .footer__link:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+.footer .footer__link {
+  opacity: .7;
+}
+
+.footer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template: auto / 1fr 1fr 1fr 1fr;
+}
+/*# sourceMappingURL=footer.css.map */
