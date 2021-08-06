@@ -41,6 +41,11 @@ h3 {
 }
 
 .cards__container {
+
+    .card {
+        padding: 0 40px;
+    }
+
     .card__title {
         line-height: 1.5rem;
         font-family: 'Overpass', sans-serif;
@@ -54,8 +59,8 @@ h3 {
     }
 
     .card__content {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
         color: var(--very-dark-grayish-blue);
     }
 }

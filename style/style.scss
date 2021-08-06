@@ -186,6 +186,11 @@ body {
     }
 
     .cards__container {
+        
+        .card {
+            padding: 0;
+        }
+
         .card__title, .card__content {
             text-align: center;
             line-height: 2rem;
